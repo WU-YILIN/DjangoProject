@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Radar - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f4f8fb, #e8eef3);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* 主体内容区样式 */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        /* 个人中心卡片样式 */
+        .profile-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .profile-card h2 {
+            font-size: 1.5rem;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        /* 按钮样式 */
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            transform: translateY(-3px);
+            background-color: #0056b3;
+        }
+
+        a.button:active {
+            transform: translateY(2px);
+        }
+
+        a.back-home-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        a.back-home-btn:hover {
+            transform: translateY(-3px);
+            background-color: #5a6268;
+        }
+
+        a.back-home-btn:active {
+            transform: translateY(2px);
+        }
+
+        /* 底部样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .profile-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>Phone Radar - Personal Profile</h1>
+    </header>
+    <!-- 主体内容区 -->
+    <main>
+        <div class="profile-card">
+            <h2>Welcome, {{ user.username }}!</h2>
+            <a href="{% url 'logout' %}" class="button">Logout</a>
+            <a href="{% url 'index' %}" class="back-home-btn">Back Home</a>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2024 Phone Radar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

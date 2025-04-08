@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Radar - Add Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        select, textarea, input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        select option {
+            padding: 5px;
+        }
+         .button-container {
+            display: flex; /* 启用水平排列 */
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        button:hover {
+            transform: translateY(-3px); /* 按钮微微上移 */
+            background-color: #0056b3;
+        }
+        button:active {
+            transform: translateY(2px); /* 按下按钮时微微下移 */
+        }
+        .back-home-btn {
+            background-color: #6c757d; /* 设置为灰色按钮背景 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            text-decoration: none; /* 去掉链接的下划线 */
+            text-align: center;
+            font-size: 16px;
+            display: flex; /* 启用水平排列 */
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        .back-home-btn:hover {
+            background-color: #5a6268; /* 悬停时稍微变暗 */
+            transform: translateY(-3px); /* 按钮微微上移 */
+        }
+        .back-home-btn:active {
+            transform: translateY(2px); /* 按下按钮时微微下移 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Review</h1>
+    <form method="post" onsubmit="return confirm('Are you sure you want to submit this review?');">
+        {% csrf_token %}
+        <label for="model">Select Model:</label>
+        <select id="model" name="model" required>
+            {% for model in models %}
+                <option value="{{ model.id }}">
+                    {{ model.brand.name }} {{ model.model_name }}
+                    (Launched on: {{ model.launch_date }}, Platform: {{ model.platform }})
+                </option>
+            {% endfor %}
+        </select>
+        <p class="hint">Choose the phone model for which you want to write a review.</p>
+
+        <label for="review_article">Review Article:</label>
+        <textarea id="review_article" name="review_article" required placeholder="Write your detailed review here..."></textarea>
+        <p class="hint">Please provide a comprehensive review of the phone.</p>
+
+        <label for="date_published">Date Published:</label>
+        <input type="date" id="date_published" name="date_published" required>
+        <p class="hint">Select the date when this review will be considered published.</p>
+
+        <div class="button-container">
+                    <button class="submit" >Add Review</button>
+                    <a href="{% url 'index' %}" class="back-home-btn">Back to Home</a>
+        </div>
+    </form>
+</body>
+</html>

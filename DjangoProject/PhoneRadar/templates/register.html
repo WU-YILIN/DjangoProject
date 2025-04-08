@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Phone Radar - Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        body {
+            background-image: url("{% static 'images/background.png' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 表单容器样式 */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* 标签样式 */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* 输入框样式 */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #999;
+        }
+
+        /* 按钮样式 */
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* 按钮居中对齐 */
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 链接样式 */
+        .form-footer {
+            text-align: left; /* 左对齐链接 */
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form-footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 错误提示样式 */
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        /* 垂直间距优化 */
+        .hint {
+            font-size: 12px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    {% if form.errors %}
+        <div class="error">
+            <p>Please correct the following errors:</p>
+            <ul>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ field.label }}: {{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="{{ form.username.id_for_label }}">Username:</label>
+        {{ form.username }}
+        <p class="hint">Choose a unique username.</p>
+
+        <label for="{{ form.password1.id_for_label }}">Password:</label>
+        {{ form.password1 }}
+        <p class="hint">Your password must be at least 8 characters long and contain a mix of letters and numbers.</p>
+
+        <label for="{{ form.password2.id_for_label }}">Confirm Password:</label>
+        {{ form.password2 }}
+        <p class="hint">Please re-enter your password to confirm.</p>
+
+        <!-- 注册按钮 -->
+        <button type="submit">Register</button>
+
+        <!-- 提示信息链接：放置在左下方 -->
+        <div class="form-footer">
+            <p><a href="{% url 'login' %}">Already have an account? Login</a></p>
+        </div>
+    </form>
+</body>
+</html>

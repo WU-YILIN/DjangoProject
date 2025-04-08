@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Radar - Add Phone</title>
+    <style>
+        h1 {
+            text-align: center; /* 标题居中 */
+            font-size: 24px; /* 可根据需要调整字体大小 */
+            color: #333; /* 标题颜色 */
+            margin: 0 auto 20px; /* 标题与表单之间的间距 */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* 屏幕水平居中 */
+            align-items: center; /* 屏幕垂直居中 */
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column; /* 垂直排列内容 */
+            align-items: center; /* 水平居中对齐 */
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            
+           
+            text-align: center;
+            display: flex; /* 启用水平排列 */
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        
+        button:hover {
+            transform: translateY(-3px); /* 按钮微微上移 */
+            background-color: #0056b3;
+        }
+        button:active {
+            transform: translateY(2px); /* 按下按钮时微微下移 */
+        }
+        
+        .button-container {
+            display: flex; /* 启用水平排列 */
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        
+        .add-phone-btn {
+            font-weight: bold;
+        }
+        
+        .back-home-btn {
+            background-color: #6c757d; /* 设置为灰色按钮背景 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            text-decoration: none; /* 去掉链接的下划线 */
+            text-align: center;
+            font-size: 16px;
+            display: flex; /* 启用水平排列 */
+            gap: 10px; /* 按钮之间的间距 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        .back-home-btn:hover {
+            background-color: #5a6268; /* 悬停时稍微变暗 */
+            transform: translateY(-3px); /* 按钮微微上移 */
+        }
+        .back-home-btn:active {
+            transform: translateY(2px); /* 按下按钮时微微下移 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Add Phone</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="brand_name">Brand Name:</label>
+            <input type="text" id="brand_name" name="brand_name" required placeholder="Enter the brand name" />
+            <p class="hint">Please enter the name of the phone brand.</p>
+    
+            <label for="origin">Origin:</label>
+            <input type="text" id="origin" name="origin" required placeholder="Enter the origin of the brand" />
+            <p class="hint">Enter the country or region where the brand originated.</p>
+    
+            <label for="manufacturing_since">Manufacturing Since:</label>
+            <input type="date" id="manufacturing_since" name="manufacturing_since" required placeholder="Select the start date" />
+            <p class="hint">Select the date when the brand started manufacturing phones.</p>
+    
+            <label for="model_name">Model Name:</label>
+            <input type="text" id="model_name" name="model_name" required placeholder="Enter the model name" />
+            <p class="hint">Enter the specific model name of the phone.</p>
+    
+            <label for="launch_date">Launch Date:</label>
+            <input type="date" id="launch_date" name="launch_date" required placeholder="Select the launch date" />
+            <p class="hint">Select the date when the phone model was launched.</p>
+    
+            <label for="platform">Platform:</label>
+            <input type="text" id="platform" name="platform" required placeholder="Enter the platform information" />
+            <p class="hint">Enter the operating system platform or other relevant platform details.</p>
+            <div class="button-container">
+                <button class="add-phone-btn" >Add Phone</button>
+                <a href="{% url 'index' %}" class="back-home-btn">Back to Home</a>
+            </div>
+    
+        </form>
+    </div>
+</body>
+</html>
