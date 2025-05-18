@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccfcbc58-5d45-4316-b11c-6d126019033d" name="Changes" comment="first commit" />
+    <list default="true" id="ccfcbc58-5d45-4316-b11c-6d126019033d" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/PhoneRadar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/PhoneRadar/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/PhoneRadar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/PhoneRadar/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/phoneReview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DjangoProject/PhoneRadar/phoneReview/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MydjangoProject/src/folder/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MydjangoProject/src/folder/resource.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MydjangoProject/src/output.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/.idea/week4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/.idea/week4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/games/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/games/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/games/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/games/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week4/week4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week4/week4/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +30,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -27,30 +52,102 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WU-YILIN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:WU-YILIN/DjangoProject.git&quot;,
+    &quot;accountId&quot;: &quot;8d57b0e6-f5af-488b-909e-a249f9da5bcc&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2uo2rtb7frNHTBPkGj8ipiWcZRC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.MydjangoProject.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.MydjangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auto_marked.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deepseek.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;phoneRadar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/UM/7014/DjangoProject/MydjangoProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UM\7014\DjangoProject\MydjangoProject\MydjangoProject\src\folder" />
+      <recent name="D:\UM\7014\DjangoProject\MydjangoProject\MydjangoProject\src\excel_folder" />
+      <recent name="D:\UM\7014\DjangoProject\MydjangoProject\MydjangoProject\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.deepseek">
+    <configuration name="auto_marked" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MydjangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MydjangoProject/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MydjangoProject/src/auto_marked.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deepseek" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MydjangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MydjangoProject/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MydjangoProject/src/deepseek.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MydjangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="MydjangoProject" />
       <option name="ENV_FILES" value="" />
@@ -76,12 +173,18 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.deepseek" />
+        <item itemvalue="Python.auto_marked" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
-        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -96,6 +199,9 @@
       <workItem from="1742900809417" duration="378000" />
       <workItem from="1742901192709" duration="132000" />
       <workItem from="1742901327965" duration="3385000" />
+      <workItem from="1744133822271" duration="20576000" />
+      <workItem from="1745121095109" duration="523000" />
+      <workItem from="1747558036891" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -150,5 +256,25 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MydjangoProject/src/auto_marked.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MydjangoProject/src/deepseek.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MydjangoProject$deepseek.coverage" NAME="deepseek Coverage Results" MODIFIED="1744211560754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MydjangoProject/src" />
+    <SUITE FILE_PATH="coverage/MydjangoProject$auto_marked.coverage" NAME="auto_marked Coverage Results" MODIFIED="1744139019957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MydjangoProject/src" />
   </component>
 </project>

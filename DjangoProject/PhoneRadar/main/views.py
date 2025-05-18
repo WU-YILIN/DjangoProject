@@ -11,6 +11,14 @@ def index(request):
     return render(request, 'index.html', {'reviews': reviews})
 
 
+
+### week 5 ==========================================================================================
+# Create your views here.
+# def index(request):
+#     context = { 'title': 'Welcome to Phone Review !'}
+#     return render(request, 'phoneReview/index.html',context)
+
+### =================================================================================================
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
